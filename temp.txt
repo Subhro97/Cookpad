@@ -1,0 +1,15 @@
+
+.card-1{
+    padding:5rem;
+}
+.card-2{
+    padding:2rem;
+}
+.card-3{
+    padding:2rem;
+}
+.card-4{
+    padding:4rem;
+}
+<img src="Images\card-1.jpg" width="100%">
+<video class="video" src="Images\video.mp4" controls></video>
