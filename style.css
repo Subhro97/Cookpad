@@ -361,7 +361,7 @@ body{
 /****************brands***********************/
 
 .brands{
-    margin:100px auto 100px;
+    margin:175px auto 100px;
 }
 .n-row{
     display:flex;
@@ -397,6 +397,42 @@ body{
     left:47.4%;
     transform: translateX(-50);
 }
+
+/****************About*********************/
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    padding-top:1.1rem;
+
+}
+
+.a-title{
+    font-weight: 400;
+    text-align: center;
+    position:relative;
+    
+}
+.a-title::after{
+    content:'';
+    background: #ff523b;
+    width:89px;
+    height:5px;
+    border-radius: 5px;
+    position: absolute;
+    top:2.75rem;
+    left:5.1%;
+    transform: translateX(-50);
+}
+.about{
+    width:57%;
+    line-height: 1.56;
+    text-align: center;
+}
+
+
 
 
 
