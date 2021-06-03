@@ -481,6 +481,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .f1-col-3,.f2-col-3,.f3-col-3{
