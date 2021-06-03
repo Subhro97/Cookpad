@@ -432,6 +432,86 @@ body{
     text-align: center;
 }
 
+/**************footer************************/
+.footer{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 260px;
+    margin-top: 42px;
+    padding-bottom: 35px;
+}
+.f-row{
+    display: flex;
+}
+.f1-col-3{
+    margin-top: 46px;
+    line-height: 2;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 134px;
+    margin-left: 40px;
+    width:28%;
+}
+.f2-col-3{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 93px;
+    margin-top: 46px;
+    margin-left: 53px;
+    line-height: 2;
+    width:28%;
+}
+.f3-col-3{
+    margin-left: 72px;
+    margin-top: 46px;
+    display: flex;
+    line-height: 2;
+    flex-direction: column;
+    width:45%;
+}
+.connect{
+    width:47%;
+    height:44px;
+    display:flex;
+    justify-content: space-between;
+}
+.con{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1-col-3,.f2-col-3,.f3-col-3{
+    
+    margin-left: 40px;
+}
+.email-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.email{
+    width:75%;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border:1px solid white;
+    height:2.4rem;
+}
+.email span{
+    padding:1rem;
+}
+.button{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 
 
