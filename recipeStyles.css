@@ -3,11 +3,85 @@
 }
 body{
     margin:0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 .cont{
-    height:50vh;
-    width:50vw;
+    height:100vh;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:5.5rem;
+    justify-content: space-around;
+    gap:5rem;
+    
+}
+.d-container{
+    flex-basis: 21%;
+    height:70%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 0.5px solid grey;
+    border-radius: 1.2rem;
+}
+.p-1,.p-2,.p-3,.p-4,.p-5,.p-6{
+    position: relative;
+    top:17.5rem;
+    left:0.5rem;
+    color:white;
+    font-weight: 500;
+}
+.p-4{
+    color: black;
+}
+.c-1{
+    position: relative;
+    color: white;
+    top: 20.3rem;
+    left: 11rem;
+}
+.c-2{
+    position: relative;
+    color: white;
+    top: 20.3rem;
+    left: 12rem;
+}
+.c-3{
+    position: relative;
+    color: white;
+    top: 20.3rem;
+    left: 10rem;
+}
+.c-4{
+    position: relative;
+    color: rgb(24, 23, 23);
+    top: 20.35rem;
+    left: 11.15rem;
+}
+.c-5{
+    position: relative;
+    color: white;
+    top: 20.35rem;
+    left: 10.7rem;
+}
+.c-6{
+    position: relative;
+    color: white;
+    top: 20.4rem;
+    left: 9.25rem;
+}
+.ingredients{
+    position: relative;
+    top:-5rem;
+    left:0.5rem;
+}
+.ingredients p{
+    line-height: 1;
+    color:white;
+    font-size:11.5px;
+}
+.inner-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

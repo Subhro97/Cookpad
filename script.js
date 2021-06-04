@@ -9,7 +9,6 @@ let recipeImg;
 let recipeUrl;
 let recipeIngre;
 
-
 const getData = async (e) => {
   if (e.key == "Enter" && search.value != "") {
     req = `https://api.edamam.com/search?q=${search.value}&app_id=${APP_ID}&app_key=${APP_KEY}`;
@@ -31,10 +30,16 @@ const getData = async (e) => {
       });
     }
 
-    let link=document.createElement("a");
-    link.href="recipes.html";
+    localStorage.setItem("recipeNames",recipeNames);
+    localStorage.setItem("recipeImg",recipeImg);
+    localStorage.setItem("recipeUrl",recipeUrl);
+    localStorage.setItem("recipeIngre",JSON.stringify(recipeIngre));
+
+    let link = document.createElement("a");
+    link.href = "recipes.html";
     link.click();
   }
 };
 
 search.addEventListener("keypress", getData);
+
