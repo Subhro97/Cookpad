@@ -29,7 +29,8 @@ const getData = async (e) => {
         return recipe.recipe.ingredients;
       });
     }
-
+    
+    localStorage.setItem("name",search.value);
     localStorage.setItem("recipeNames",recipeNames);
     localStorage.setItem("recipeImg",recipeImg);
     localStorage.setItem("recipeUrl",recipeUrl);
