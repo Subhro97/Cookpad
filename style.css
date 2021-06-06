@@ -42,6 +42,23 @@ a:hover {
   padding-right: 25px;
   max-height: 90px;
 }
+.n-about,.n-partners,.n-contact,.n-recipe{
+  cursor: pointer;
+  text-decoration: none;
+  color: #555;
+}
+.n-about:hover{
+  color: #ff523b;
+}
+.n-partners:hover{
+  color: #ff523b;
+}
+.n-contact:hover{
+  color: #ff523b;
+}
+.n-recipe:hover{
+  color: #ff523b;
+}
 /*************hearder************/
 ::placeholder{
     font-size: medium;
@@ -301,6 +318,20 @@ a:hover {
 .c4 {
   left: 9.8rem;
 }
+.more{
+  position:relative;
+  left:72.5rem;
+  top:1rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  color:#ff523b;
+  cursor: pointer;
+}
+.fa-chevron-right{
+  position: relative;
+  top:0.1rem;
+  left:0.5rem;
+}
 /****************video-container********************/
 .video-container {
   height: 48rem;
@@ -367,11 +398,60 @@ a:hover {
   position: absolute;
   top: 16rem;
   left: 4.5rem;
-  text-decoration: underline;
 }
-.row-1,
-.row-2,
-.row-3 {
+.v-2 {
+  position: absolute;
+  top: 16rem;
+  left: 3rem;
+}
+.v-3 {
+  position: absolute;
+  top: 16rem;
+  left: 3.8rem;
+}
+.v-4 {
+  position: absolute;
+  top: 16rem;
+  left: 4rem;
+}
+.v-5 {
+  position: absolute;
+  top: 16rem;
+  left: 6rem;
+}
+.v-6 {
+  position: absolute;
+  top: 16rem;
+  left: 4rem;
+}
+.v-7 {
+  position: absolute;
+  top: 16rem;
+  left: 6rem;
+}
+.v-9 {
+  position: absolute;
+  top: 16rem;
+  left: 6.3rem;
+}
+.v-10 {
+  position: absolute;
+  top: 16rem;
+  left: 5.6rem;
+}
+.v-11 {
+  position: absolute;
+  top: 16rem;
+  left: 3.5rem;
+}
+.v-12 {
+  position: absolute;
+  top: 16rem;
+  left: 6.7rem;
+}
+
+
+.row-1,.row-2,.row-3 {
   position: relative;
   top: -3.05rem;
   height: 50vh;
@@ -379,6 +459,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
 }
+
 .row-2 {
   top: -8.5rem;
 }

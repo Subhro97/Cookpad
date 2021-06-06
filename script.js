@@ -29,12 +29,12 @@ const getData = async (e) => {
         return recipe.recipe.ingredients;
       });
     }
-    
-    localStorage.setItem("name",search.value);
-    localStorage.setItem("recipeNames",recipeNames);
-    localStorage.setItem("recipeImg",recipeImg);
-    localStorage.setItem("recipeUrl",recipeUrl);
-    localStorage.setItem("recipeIngre",JSON.stringify(recipeIngre));
+
+    localStorage.setItem("name", search.value);
+    localStorage.setItem("recipeNames", recipeNames);
+    localStorage.setItem("recipeImg", recipeImg);
+    localStorage.setItem("recipeUrl", recipeUrl);
+    localStorage.setItem("recipeIngre", JSON.stringify(recipeIngre));
 
     let link = document.createElement("a");
     link.href = "recipes.html";
@@ -44,3 +44,22 @@ const getData = async (e) => {
 
 search.addEventListener("keypress", getData);
 
+let about = document.querySelector(".n-about");
+about.addEventListener("click", () => {
+  document.querySelector(".about-container").scrollIntoView();
+});
+
+let contact = document.querySelector(".n-contact");
+contact.addEventListener("click", () => {
+  document.querySelector(".footer").scrollIntoView();
+});
+
+let recipe = document.querySelector(".n-recipe");
+recipe.addEventListener("click", () => {
+  document.querySelector(".video-container").scrollIntoView();
+});
+
+let brand = document.querySelector(".n-partners");
+brand.addEventListener("click", () => {
+  document.querySelector(".brands").scrollIntoView();
+});

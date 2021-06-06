@@ -1,8 +1,10 @@
 let title = document.querySelector(".title");
 let cont = document.querySelector(".cont");
 let footer = document.querySelector(".footer");
+let page = document.querySelector(".pagination");
 
 footer.style.top = 268.875 + "px";
+page.style.top = 290 + "px";
 
 let tname = localStorage.getItem("name");
 tname = tname.charAt(0).toUpperCase() + tname.slice(1);
@@ -92,8 +94,10 @@ for (let i = 0; i < ingreBtn.length; i++) {
       if(arr<4){
       cont.style.gap = rect.height + "px" + " " + "5rem";
       footer.style.top = rect.height + 268.875 + "px";
+      page.style.top = rect.height + 280 + "px";
       }else{
         footer.style.top = rect.height + 268.875 + "px";
+        page.style.top = rect.height + 280 + "px";
       }
 
       flag = true;
@@ -103,6 +107,7 @@ for (let i = 0; i < ingreBtn.length; i++) {
       main.style.borderBottomLeftRadius = "1.2rem";
       main.style.borderBottomRightRadius = "1.2rem";
       footer.style.top = 268.875 + "px";
+      page.style.top = 290 + "px";
 
       flag = false;
     }
