@@ -5,23 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="recipeStyles.css" />
   </head>
   <body>
+    <!-------------------Nav-------------------------->
+    <div class="nav-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="Images/header-img.jpg" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Recipes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--------------------Body------------------------>
     <h1 class="title"></h1>
     <div class="cont"></div>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
 
     <!---------------------Footer---------------------->
     <div class="footer">
       <div class="small-container">
-        <div class="f-row" style="color: white;">
+        <div class="f-row" style="color: white">
           <div class="f1-col-3">
-            <span style="cursor: pointer;">FAQ</span>
-            <span style="cursor: pointer;">Privacy</span>
-            <span style="cursor: pointer;">Sitemap</span>
-            <span style="cursor: pointer;">Security</span>
+            <span style="cursor: pointer">FAQ</span>
+            <span style="cursor: pointer">Privacy</span>
+            <span style="cursor: pointer">Sitemap</span>
+            <span style="cursor: pointer">Security</span>
           </div>
           <div class="f2-col-3">
             <span>Cookpad</span>
@@ -34,17 +68,22 @@
             </div>
           </div>
           <div class="f3-col-3">
-            <span style="color: white;">Subscribe To my NewsLetter</span>
+            <span style="color: white">Subscribe To my NewsLetter</span>
             <div class="email-container">
               <div class="email">
                 <span>Enter Your Email here*</span>
               </div>
-              <div class="r-button" style="background-color: white; color: rgb(22, 22, 22);">Join</div>
+              <div
+                class="r-button"
+                style="background-color: white; color: rgb(22, 22, 22)"
+              >
+                Join
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>  
+    </div>
     <script src="script2.js" defer></script>
   </body>
 </html>

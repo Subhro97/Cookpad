@@ -1,8 +1,8 @@
 let title = document.querySelector(".title");
 let cont = document.querySelector(".cont");
-let footer = document.querySelector(".footer")
+let footer = document.querySelector(".footer");
 
-footer.style.top = 268.875+"px";
+footer.style.top = 268.875 + "px";
 
 let tname = localStorage.getItem("name");
 tname = tname.charAt(0).toUpperCase() + tname.slice(1);
@@ -34,6 +34,7 @@ for (let i = 0; i <= 5; i++) {
   dcount = document.createElement("div");
   dcount.classList.add(`d-container-${i + 1}`);
   dcount.classList.add("d-man");
+  
   dcount.style.backgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%),url(${img[i]})`;
   dcount.style.backgroundPosition = "center";
   dcount.style.backgroundSize = "cover";
@@ -56,11 +57,15 @@ for (let i = 0; i <= 5; i++) {
 let small;
 let flag = false;
 let main;
+
 let ingreBtn = document.querySelectorAll(".button");
 for (let i = 0; i < ingreBtn.length; i++) {
+  
   ingreBtn[i].addEventListener("click", (e) => {
     if (flag == false) {
       main = document.querySelector(`.d-container-${i + 1}`);
+      let arr = main.classList[0].split('-')[2];
+      console.log(arr);
       small = document.createElement("div");
       small.classList.add("ingredients");
 
@@ -80,11 +85,16 @@ for (let i = 0; i < ingreBtn.length; i++) {
       }
       main.appendChild(small);
       let rect = small.getBoundingClientRect();
-      cont.style.gap = rect.height + "px" + " " + "5rem";
       main.style.borderBottomLeftRadius = "0rem";
       main.style.borderBottomRightRadius = "0rem";
       main.style.border = "0.5px solid grey";
-      footer.style.top = rect.height+268.875+"px";
+
+      if(arr<4){
+      cont.style.gap = rect.height + "px" + " " + "5rem";
+      footer.style.top = rect.height + 268.875 + "px";
+      }else{
+        footer.style.top = rect.height + 268.875 + "px";
+      }
 
       flag = true;
     } else {
@@ -92,7 +102,7 @@ for (let i = 0; i < ingreBtn.length; i++) {
       cont.style.gap = "5rem";
       main.style.borderBottomLeftRadius = "1.2rem";
       main.style.borderBottomRightRadius = "1.2rem";
-      footer.style.top = 268.875+"px";
+      footer.style.top = 268.875 + "px";
 
       flag = false;
     }
@@ -104,12 +114,12 @@ let containers = document.querySelectorAll(".d-man");
 for (let i = 0; i < containers.length; i++) {
   containers[i].addEventListener("mouseover", (e) => {
     let div = e.currentTarget;
-    div.style.transform="scale(1.05)";
+    div.style.transform = "scale(1.05)";
   });
 
   containers[i].addEventListener("mouseout", (e) => {
     let div = e.currentTarget;
-    div.style.transform="scale(1)";
+    div.style.transform = "scale(1)";
   });
 
   containers[i].addEventListener("dblclick", (e) => {
