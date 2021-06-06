@@ -236,7 +236,7 @@ a:hover {
       rgba(0, 0, 0, 0.05) 50%,
       rgba(0, 0, 0, 0.05) 85%
     ),
-    url(Images/col-3.jpg);
+    url(Images/col-1.jpg);
 }
 .col-2 {
   background-image: linear-gradient(
@@ -254,7 +254,7 @@ a:hover {
       rgba(0, 0, 0, 0.05) 50%,
       rgba(0, 0, 0, 0.05) 85%
     ),
-    url(Images/col-4.jpg);
+    url(Images/col-3.jpg);
 }
 .col-4 {
   background-image: linear-gradient(
@@ -263,7 +263,7 @@ a:hover {
       rgba(0, 0, 0, 0.05) 50%,
       rgba(0, 0, 0, 0.05) 85%
     ),
-    url(Images/col-1.jpg);
+    url(Images/col-4.jpg);
 }
 .c-row {
   height: 60%;
